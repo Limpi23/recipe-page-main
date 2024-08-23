@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+
+body {
+  display: flex;
+  background: hsl(30, 18%, 87%);
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  font-family: "Young Serif", serif;
+  font-size: 16px;
+}
+
+.card {
+  background: white;
+  width: 70%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.content-cover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.cover-page {
+  width: 100%;
+  max-width: 460px;
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+.content-recipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.description h1,
+.description p {
+  margin: 5px;
+}
+
+.description p {
+  font-size: 12px;
+  color: gray;
+}
+
+.preparation {
+  background: hsl(330, 100%, 98%);
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+
+  & label {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+  }
+
+  & li {
+    margin: 10px;
+    padding-left: 10px;
+  }
+
+  & span {
+    font-weight: bold;
+    color: hsl(30, 10%, 34%);
+  }
+}
+
+.ingredients {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: "Outfit", sans-serif;
+
+  & label {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  & ul {
+    padding-left: 10px;
+  }
+
+  & li {
+    margin: 10px;
+    padding-left: 10px;
+  }
+  & li::marker {
+    color: hsl(332, 51%, 32%);
+  }
+}
+
+.instructions {
+  font-family: "Outfit", sans-serif;
+  margin-top: 20px;
+  font-size: 14px;
+
+  & label {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+    font-size: 24px;
+  }
+
+  & span {
+    font-weight: bold;
+    color: hsl(30, 10%, 34%);
+  }
+
+  & ol {
+    padding-left: 10px;
+  }
+
+  & li {
+    margin: 10px;
+    padding-left: 10px;
+  }
+  & li::marker {
+    color: hsl(332, 51%, 32%);
+  }
+}
+
+.nutrition {
+  font-size: 12px;
+
+  & label {
+    color: hsl(332, 51%, 32%);
+    font-weight: bold;
+    font-size: 24px;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #f5f5f5;
+  margin: 5px 0;
+}
